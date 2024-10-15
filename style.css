@@ -1,0 +1,184 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'poppins' , sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    background: transparent;
+}
+.logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: white
+}
+.navlist{
+    display: flex;
+}
+.navlist a{
+    color: white;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+.navlist a:hover{
+    border-bottom: 2px solid white;
+}
+#menu-icon{
+    color: white;
+    font-size: 35px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+.hero{
+    height: 100%;
+    width: 100%;
+    min-height: 100pv;
+    background: linear-gradient(245.59deg, #17202a 0%, #283747 28.53%, #566573 75.52%);
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+.hero-img img{
+    width: 300px;
+    height: auto;
+}
+section{
+    padding: 0 20%;
+}
+.hero-text h5{
+    font-family: "Nerko One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 34px;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 40px;
+}
+.hero-text h1{  
+    font-family: "Nerko One", system-ui;
+    font-size: 30px;
+    font-weight: 200;
+    font-style: normal;
+}
+.hero-text h4{
+    font-size: 30px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 10px;
+    font-family: "Nerko One", system-ui;
+}
+.hero-text p{
+    color: black;
+    font-size: 19px;
+    line-height: 2.9;
+    margin-bottom: 40px;
+    font-family: "Nerko One", system-ui;
+}
+.hero-text a{
+    display: inline-block;
+    color: black;
+    background:springgreen;
+    border: 1px solid transparent;
+    padding: 12px 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all .55s ease;
+}
+.hero-text a:hover{
+    background: transparent;
+    border: 1px solid black;
+    transform:translate(8px);
+}
+.hero-text a.ctaa i{
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.icons{
+    position: absolute;
+    top: 50%;
+    padding: 0 9%;
+    transform: translateY(-50%);
+}
+.icons i{
+    display: block;
+    margin: 25px 0;
+    font-size: 35px;
+    color: black;
+    transition: all .50s ease;
+}
+.icons i:hover{
+    color: white;
+    transform: translateY(-5px);
+}
+.scroll-down{
+    position: absolute;
+    bottom: 6%;
+    right: 9%;
+}
+.scroll-down i{
+    display: block;
+    padding: 12px;
+    font-size: 25px;
+    color: white;
+    background:black;
+    border-radius: 30px;
+    transition: all .50s ease;
+}
+.scroll-down i:hover{
+    transform: translateY(-5px);
+}
+/* DROPDOWN MENU */
+/* RESPONSIBE DESIGN */
+@media (max-width: 990px){
+    #menu-icon{
+        display: block;
+    }
+    .navlist{
+        position: absolute;
+        top: 100%;
+        right: -100;
+        width: 300px;
+        height: 40vh;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px 20px;
+        transition: all .55s ease;
+    }
+    .navlist a{
+        display: block;
+        margin: 10px 0;
+        margin-left: o;
+    }
+    .navlist.open{
+        right: 0;
+    }
+}
+@media (max-width: 680px){
+    .hero-img img{
+        width: 100%;
+        height: auto;
+    }
+}
