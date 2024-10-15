@@ -6,6 +6,7 @@
     list-style: none;
     text-decoration: none;
 }
+
 header{
     position: fixed;
     right: 0;
@@ -150,7 +151,7 @@ section{
 }
 /* DROPDOWN MENU */
 /* RESPONSIBE DESIGN */
-@media (max-width: 990px){
+@media (max-width: 767px){
     #menu-icon{
         display: block;
     }
@@ -176,7 +177,7 @@ section{
         right: 0;
     }
 }
-@media (max-width: 680px){
+@media (max-width: 780px){
     .hero-img img{
         width: 100%;
         height: auto;
